@@ -1,5 +1,5 @@
-const { execSync } = require("child_process");
-const fs = require("fs");
+import { execSync } from "child_process";
+import fs from "fs";
 
 const logs = execSync(
   'git log --since="7 days ago" --pretty=format:"%ad - %s" --date=short'
